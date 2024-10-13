@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||indeed.*/*remoteEntry.*",
+            "resourceTypes": ["main_frame", "sub_frame", "script"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||indeed.*/*reviews-aurora*",
+            "resourceTypes": ["main_frame", "sub_frame", "script"]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||glassdoor.*/*-hardsell*",
+            "resourceTypes": ["main_frame", "sub_frame", "script"]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "queryTransform": {
+                        "addOrReplaceParams": [
+                            {
+                                "key": "share",
+                                "value": "1"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "condition": {
+            "urlFilter": "||quora.com/",
+            "resourceTypes": ["main_frame", "sub_frame"]
+        }
+    }
+]
