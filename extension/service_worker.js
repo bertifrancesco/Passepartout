@@ -1,5 +1,13 @@
 "use strict";
 
+chrome.runtime.onInstalled.addListener(() => {
+    console.log("Passepartout: installed.");
+});
+
+chrome.runtime.onStartup.addListener(() => {
+    console.log("Passepartout: started.");
+});
+
 chrome.runtime.onMessage.addListener((m) => {
     switch (m.method) {
         case "enableRules":

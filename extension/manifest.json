@@ -2,7 +2,7 @@
     "name": "Passepartout",
     "description": "Bypass the login wall on Glassdoor, Indeed and Quora",
     "author": "Francesco Berti",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "manifest_version": 3,
     "permissions": [
         "storage",
