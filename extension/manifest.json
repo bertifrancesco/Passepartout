@@ -1,6 +1,6 @@
 {
     "name": "Passepartout",
-    "description": "Bypass the login wall on Glassdoor, Indeed and Quora",
+    "description": "Improve the experience on Glassdoor, Indeed and Quora",
     "author": "Francesco Berti",
     "version": "0.1.2",
     "manifest_version": 3,

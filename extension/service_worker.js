@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener((m) => {
 });
 
 chrome.declarativeNetRequest.onRuleMatchedDebug.addListener((e) => {
-    console.log(`Passepartout: ${e.request.url} successfully bypassed.`);
+    console.log(`Passepartout: ${e.request.url} successfully improved.`);
 });
 
 console.log("Passepartout: service worker started.");
